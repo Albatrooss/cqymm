@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 interface comProps {
     
@@ -26,12 +26,29 @@ const WeddingCard = ({  }: comProps) => {
 }
 export default WeddingCard;
 
+const AnimationTest = keyframes`
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateY(90deg);
+    }
+`;
+
 const Wrapper = styled.div`
-    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 10vh 0;
+    transform-style: preserve-3d;
+    transform-origin: left;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+    animation: ${AnimationTest} 4s ease-in forwards;
 `;
 
 interface ImgProps {
