@@ -17,6 +17,8 @@ declare module 'styled-components' {
             white: string;
             black: string;
 
+            error: string;
+
         }
     }
 }
@@ -36,6 +38,8 @@ const theme: DefaultTheme = {
 
         white: '#F2F2F2',
         black: '#333333',
+
+        error: '#ED4337',
 
     }
 }
