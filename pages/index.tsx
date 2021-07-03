@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 import Slideshow from '../components/Slideshow';
 import Wisher from '../components/Wisher';
-import WeddingCard from '../components/WeddingCard';
+// import WeddingCard from '../components/WeddingCard';
 
 import { IMAGES } from '../util/constants';
 import styled from 'styled-components';

@@ -1,5 +1,5 @@
-import React, { ChangeEvent, MouseEvent, MouseEventHandler, useEffect, useState } from 'react'
-import styled, { keyframes } from 'styled-components'
+import React, { useEffect, useState } from 'react'
+import styled from 'styled-components'
 
 interface props {
     imgs: string[];

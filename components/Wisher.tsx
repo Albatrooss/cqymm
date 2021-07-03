@@ -1,11 +1,10 @@
-import React, { ChangeEvent, FormEvent, FormEventHandler, useState } from 'react'
+import React, { ChangeEvent, FormEvent, useState } from 'react'
 import styled from 'styled-components'
 
 import TextField from '../components/TextField';
 import InputField from '../components/InputField';
 import { CombinedError, useMutation } from 'urql';
 import { createMutation } from '../util/mutations';
-import { formatError } from 'graphql';
 
 interface comProps {
     w?: string;
